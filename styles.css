@@ -1,0 +1,49 @@
+:root {
+    --rainbow: linear-gradient(to right, red orange yellow green blue indigo violet);
+    --radial-rainbow: radial-gradient(closest-side, orange, yellow, green, blue, indigo, violet);
+    --p-size: calc((2.5vw + 1vh) / 2);
+    --input-colour: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+    --whole-screen-height: 100vh;
+    --whole-screen-width: 100vw;
+}
+title::before {
+    content: "🔒🟰🗝️"
+}
+p {
+    color: var(--rainbow);
+    font-size: var(--p-size);
+}
+label {
+    color: var(--radial-rainbow);
+    font-size: var(--p-size);
+}
+input {
+    background: #39e279;
+    width: 40%;
+    height: 20%;
+}
+input::placeholder {
+    color: #888
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   width: calc(var(--whole-screen-width) * 2 / 5);
+    height: calc(var(--whole-screen-height) / 2); 
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 40vh;
+}
+p {
+    font-weight: 600;
+    font-size: 10px;
+    height: 20vh;
+    width: contain;
+    color: #200
+}
+
+}
