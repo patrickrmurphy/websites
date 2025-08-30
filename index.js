@@ -18,31 +18,22 @@ function chooseRandom(things) {
 }
 
 function chooseRandomCharacter(string) {
+    console.log(string.split())
     return chooseRandom(string.split(""))
 }
 
-function shuffleString(string) {
-    let list = string.split("")
-    console.log("list: ", list, " -")
-    let returnstring = "";
-    for (let i = 0; i < list.length; i++) {
-        returnstring += list.splice(spinSpinner(list.length) - 1, 1).join("")
-    }
-    return returnstring
-}
 
 function calculate(event) {
     event.preventDefault()
     let password = ""
-    const length = lengthInput.value;
+    const length = lengthInput.value || 2 ;
     console.log("length: ", length)
 
     for (let i = 0; i < length; i++) {
-        console.log(`i=${i} - ${password}`)
-        password = password.concat(password, chooseRandomCharacter("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+`~/?.><,;:{}[]"))
-        for (let i = 0; i < 3; i++) {
-            shuffleString(password)
-        }
+        
+        password = password.concat(chooseRandomCharacter("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+`~/?.><,;:{}[]"))
+
+        
     }
     console.log(password)
     passwordElement.innerText = `${password}`

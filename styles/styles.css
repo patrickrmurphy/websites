@@ -18,9 +18,11 @@ label {
     font-size: var(--p-size);
 }
 input {
+    display: flex;
     background: #39e279;
     width: 40%;
     height: 20%;
+    flex-wrap: wrap;
 }
 input::placeholder {
     color: #888

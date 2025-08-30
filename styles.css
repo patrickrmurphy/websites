@@ -1,7 +1,7 @@
 :root {
     --rainbow: linear-gradient(to right, red orange yellow green blue indigo violet);
     --radial-rainbow: radial-gradient(closest-side, orange, yellow, green, blue, indigo, violet);
-    --p-size: calc((2.5vw + 1vh) / 2);
+    --p-size: calc(2.5vw + 1vh);
     --input-colour: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
     --whole-screen-height: 100vh;
     --whole-screen-width: 100vw;
@@ -19,7 +19,7 @@ label {
 }
 input {
     background: #39e279;
-    width: 40%;
+    
     height: 20%;
 }
 input::placeholder {
