@@ -1,17 +1,23 @@
 :root {
-    --border-radius: 20px
+    --border-radius: 20px;
+    --whole-page: 100%;
 }
+body {
+    border-radius: var(--border-radius);
+    display: flex;
+    width: var(--whole-page);
+    height: 50%;
 div.project {
     padding: 20px;
     width: 10%;
     height: 20%;
     border-radius: var(--border-radius);
     img {
-        width: 100%;
+        width: var(--whole-page);
         height: 30%;
         border-radius: var(--border-radius);
     }
-}
+}}
 a:not(:hover) {
     color:blue
 }
