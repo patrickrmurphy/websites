@@ -1,6 +1,8 @@
 body {
     display: flex;
-    justify-content: center;
-
-
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+a:hover {
+    color:rgb(12, 237, 211);
 }

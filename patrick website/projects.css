@@ -18,6 +18,10 @@ div.project {
         border: 10px solid red;
         border-radius: var(--border-radius);
     }
+    img:hover {
+        width: calc(var(--whole-page) *1.2);
+        height: 120px;
+    }
 }}
 a:not(:hover) {
     color:blue
